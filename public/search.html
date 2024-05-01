@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Search Page</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <header class="header">
+
+      <nav class="navbar nav-1">
+         <section class="flex">
+            <a href="/" class="logo"><i class="fas fa-house"></i>EliteEstates</a>
+
+            <ul>
+               <li><a href="#">Post Property<i class="fas fa-paper-plane"></i></a></li>
+            </ul>
+         </section>
+      </nav>
+
+      <nav class="navbar nav-2">
+         <section class="flex">
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <div class="menu">
+               <ul>
+                  <li><a href="#">Buy<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="villa.html">Villa</a></li>
+                        <li><a href="flat.html">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <!-- <li><a href="#">Ready to move</a></li>
+                        <li><a href="#">Furnished</a></li> -->
+                     </ul>
+                  </li>
+                  <li><a href="#">Sell<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <!-- <li><a href="#">Post Property</a></li>
+                        <li><a href="#">dashboard</a></li> -->
+                        <li><a href="#">Villa</a></li>
+                        <li><a href="#">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Rent<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="#">Villa</a></li>
+                        <li><a href="#">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">Help<i class="fas fa-angle-down"></i></a>
+                     <ul>
+                        <li><a href="about.html">About us</a></i></li>
+                        <li><a href="contact.html">Contact us</a></i></li>
+                        <li><a href="contact.html#faq">FAQ</a></i></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+
+            <ul>
+               <li><a href="#">Saved <i class="far fa-heart"></i></a></li>
+               <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="login.html">Login</a></li>
+                     <li><a href="register.html">Register</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </section>
+      </nav>
+
+   </header>
+
+   <!-- header section ends -->
+
+   <!-- search filter section starts  -->
+
+   <section class="filters" style="padding-bottom: 0;">
+
+      <form action="" method="post">
+         <div id="close-filter"><i class="fas fa-times"></i></div>
+         <h3>filter your search</h3>
+
+         <div class="flex">
+            <div class="box">
+               <p>Enter location</p>
+               <input type="text" name="location" required maxlength="50" placeholder="Enter city" class="input">
+            </div>
+            <div class="box">
+               <p>Offer type</p>
+               <select name="offer" class="input" required>
+                  <option value="buy">Buy</option>
+                  <option value="sell">Sell</option>
+                  <option value="rent">Rent</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Property type</p>
+               <select name="type" class="input" required>
+                  <option value="villa">Villa</option>
+                  <option value="flat">Flat</option>
+                  <option value="shop">Shop</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>BHK</p>
+               <select name="bhk" class="input" required>
+                  <option value="1">1 BHK</option>
+                  <option value="2">2 BHK</option>
+                  <option value="3">3 BHK</option>
+                  <option value="4">4 BHK</option>
+                  <option value="5">5 BHK</option>
+                  <!-- <option value="6">6 BHK</option>
+                  <option value="7">7 BHK</option>
+                  <option value="8">8 BHK</option>
+                  <option value="9">9 BHK</option> -->
+               </select>
+            </div>
+            <div class="box">
+               <p>Minimum Budget</p>
+               <select name="minimum" class="input" required>
+                  <!-- <option value="5000000">5 lac</option>
+                  <option value="1000000">10 lac</option> -->
+                  <option value="2000000">20 lac</option>
+                  <option value="3000000">30 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="5000000">50 lac</option>
+                  <option value="6000000">60 lac</option>
+                  <option value="7000000">70 lac</option>
+                  <option value="8000000">80 lac</option>
+                  <option value="9000000">90 lac</option>
+                  <option value="10000000">1 Cr</option>
+                  <option value="20000000">2 Cr</option>
+                  <option value="30000000">3 Cr</option>
+                  <!-- <option value="40000000">4 Cr</option>
+                  <option value="50000000">5 Cr</option>
+                  <option value="60000000">6 Cr</option>
+                  <option value="70000000">7 Cr</option>
+                  <option value="80000000">8 Cr</option>
+                  <option value="90000000">9 Cr</option>
+                  <option value="100000000">10 Cr</option>
+                  <option value="150000000">15 Cr</option>
+                  <option value="200000000">20 Cr</option> -->
+               </select>
+            </div>
+            <div class="box">
+               <p>Maximum Budget</p>
+               <select name="maximum" class="input" required>
+                  <!-- <option value="5000000">5 lac</option>
+                  <option value="1000000">10 lac</option>
+                  <option value="2000000">20 lac</option> -->
+                  <option value="3000000">30 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="4000000">40 lac</option>
+                  <option value="5000000">50 lac</option>
+                  <option value="6000000">60 lac</option>
+                  <option value="7000000">70 lac</option>
+                  <option value="8000000">80 lac</option>
+                  <option value="9000000">90 lac</option>
+                  <option value="10000000">1 Cr</option>
+                  <option value="20000000">2 Cr</option>
+                  <option value="30000000">3 Cr</option>
+                  <option value="40000000">4 Cr</option>
+                  <option value="50000000">5 Cr</option>
+                  <!-- <option value="60000000">6 Cr</option>
+                  <option value="70000000">7 Cr</option>
+                  <option value="80000000">8 Cr</option>
+                  <option value="90000000">9 Cr</option>
+                  <option value="100000000">10 Cr</option>
+                  <option value="150000000">15 Cr</option>
+                  <option value="200000000">20 Cr</option> -->
+               </select>
+            </div>
+            <div class="box">
+               <p>Status</p>
+               <select name="status" class="input" required>
+                  <option value="ready to move">Ready to move</option>
+                  <option value="under construction">Under construction</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Furnished type</p>
+               <select name="furnished" class="input" required>
+                  <option value="unfurnished">unfurnished</option>
+                  <option value="fully-furnished">fully-furnished</option>
+                  <option value="semi-furnished">semi-furnished</option>
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="search property" name="search" class="btn">
+      </form>
+
+   </section>
+
+   <!-- search filter section ends -->
+
+   <div id="filter-btn" class="fas fa-filter"></div>
+
+   <!-- listings section starts  -->
+
+   <section class="listings">
+
+      <h1 class="heading">searched results</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <div class="admin">
+               <h3>j</h3>
+               <div>
+                  <p>john deo</p>
+                  <span>10-11-2022</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>house</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img
+                  src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>andheri, mumbai, india - 401303</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>2</span></p>
+               <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+         </div>
+
+         <div class="box">
+            <div class="admin">
+               <h3>j</h3>
+               <div>
+                  <p>john deo</p>
+                  <span>10-11-2022</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>flat</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="https://img3.idealista.com/blur/WEB_LISTING-M/0/id.pro.es.image.master/e5/44/4a/1154892889.jpg"
+                  alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>andheri, mumbai, india - 401303</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>2</span></p>
+               <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+         </div>
+
+         <div class="box">
+            <div class="admin">
+               <h3>j</h3>
+               <div>
+                  <p>john deo</p>
+                  <span>10-11-2022</span>
+               </div>
+            </div>
+            <div class="thumb">
+               <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+               <p class="type"><span>flat</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="far fa-heart"></button>
+               </form>
+               <img src="https://cdn3.index.cy/wp-content/uploads/2023/07/961f68885830eb3b1d94aa2730d3a16f.jpg" alt="">
+            </div>
+            <h3 class="name">modern flats and appartments</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>andheri, mumbai, india - 401303</span></p>
+            <div class="flex">
+               <p><i class="fas fa-bed"></i><span>3</span></p>
+               <p><i class="fas fa-bath"></i><span>2</span></p>
+               <p><i class="fas fa-maximize"></i><span>750sqft</span></p>
+            </div>
+            <a href="view_property.html" class="btn">view property</a>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- listings section ends -->
+
+
+
+
+
+
+
+
+
+
+
+   <!-- footer section starts  -->
+
+   <footer class="footer">
+
+      <section class="flex">
+
+         <div class="box">
+            <a href="tel:9580710551"><i class="fas fa-phone"></i><span>9580710551</span></a>
+            <a href="tel:8354957789"><i class="fas fa-phone"></i><span>8354957789</span></a>
+            <a href="mailto:singkrishna2102006@gmail.com"><i
+                  class="fas fa-envelope"></i><span>singkrishna2102006@gmail.com</span></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i><span>gurugram, india - 122001</span></a>
+         </div>
+
+         <div class="box">
+            <a href="home.html"><span>home</span></a>
+            <a href="about.html"><span>about</span></a>
+            <a href="contact.html"><span>contact</span></a>
+            <a href="listings.html"><span>all listings</span></a>
+            <a href="#"><span>saved properties</span></a>
+         </div>
+
+         <div class="box">
+            <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+            <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/krsingh5689?igsh=MW5pZWwyYmkxdjIxeA==&utm_source=qr"><span>instagram</span><i
+                  class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC2XwK_w_UwtohHjXihQfpGg"><span>youtube</span><i
+                  class="fab fa-youtube"></i></a>
+
+         </div>
+
+      </section>
+
+      <div class="credit">&copy; copyright @ 2024 by <span>mr.Krishna Singh web designer</span> | all rights reserved!
+      </div>
+
+   </footer>
+
+   <!-- footer section ends -->
+
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+   <script src="script.js"></script>
+
+   <script>
+
+      document.querySelector('#filter-btn').onclick = () => {
+         document.querySelector('.filters').classList.add('active');
+      }
+
+      document.querySelector('#close-filter').onclick = () => {
+         document.querySelector('.filters').classList.remove('active');
+      }
+
+   </script>
+
+</body>
+
+</html>
